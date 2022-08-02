@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header" id="header">
+
+    <div class="container">
+      <nav class="nav">
+
+        <a href="/" class="nav__logo">
+          <img src="/images/logo.png" alt="" class="nav__img">
+        </a>
+        <ul class="nav__menu" id="menu">
+          <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="/" class="nav__link">Pages</a></li>
+          <li class="nav__item"><a href="/" class="nav__link">Services</a></li>
+          <li class="nav__item"><a href="/" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="/" class="nav__link">Blog</a></li>
+          <li class="nav__item"><a href="/" class="nav__link">Contact Us</a></li>
+        </ul>
+        <div class="nav__burger" id="nav__burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="nav__element">
+          <button class="nav__serch nav__btn">
+            <img src="/images/search.svg" alt="" class="nav__serch-img">
+          </button>
+          <button class="nav__carz nav__btn">
+            <img src="/images/kar.svg" alt="" class="nav__carz-img">
+            <span class="nav__carz-img__span">1</span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section id="section__home" class="home">
+    <div class="container">
+      <div class="home__text">
+        <h3 class="home__descrip">
+          INTERIOR
+        </h3>
+        <h1 class="home__title">
+          Home Deasigns Made Easy
+        </h1>
+        <h4 class="home__prise">
+          $416.00
+          <span class="home__prise-opsion">
+            Starting
+          </span>
+        </h4>
+        <button class="home__btn">
+          SHOP NOW
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="section__carousel" class="carousel-wrapper">
+    <button type="button" class="arrows left-arrow arrow-inactive" aria-label="Arrow Left">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+        <path
+          d="M192 448c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l137.4 137.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448z" />
+      </svg>
+    </button>
+    <section class="carousel">
+      <a href="/" class="carousel__item">
+        <h2 class="carousel__title">
+          New Chair
+          Collection 2022
+        </h2>
+        <button class="carousel__btn">
+          SHOP NOW
+        </button>
+        <img src="/images/stul1.png" alt="" class="carousel__img">
+      </a>
+      <a href="/" class="carousel__item">
+        <h2 class="carousel__title">
+          New Chair
+          Collection 2022
+        </h2>
+        <button class="carousel__btn">
+          SHOP NOW
+        </button>
+        <img src="/images/stul6.png" alt="" class="carousel__img">
+      </a>
+      <a href="/" class="carousel__item">
+        <h2 class="carousel__title">
+          New Chair
+          Collection 2022
+        </h2>
+        <button class="carousel__btn">
+          SHOP NOW
+        </button>
+        <img src="/images/stul4.png" alt="" class="carousel__img">
+      </a>
+      <a href="/" class="carousel__item">
+        <h2 class="carousel__title">
+          New Chair
+          Collection 2022
+        </h2>
+        <button class="carousel__btn">
+          SHOP NOW
+        </button>
+        <img src="/images/stul2.png" alt="" class="carousel__img">
+      </a>
+      <a href="/" class="carousel__item">
+        <h2 class="carousel__title">
+          New Chair
+          Collection 2022
+        </h2>
+        <button class="carousel__btn">
+          SHOP NOW
+        </button>
+        <img src="/images/stul3.png" alt="" class="carousel__img">
+      </a>
+      <a href="/" class="carousel__item">
+        <h2 class="carousel__title">
+          New Chair
+          Collection 2022
+        </h2>
+        <button class="carousel__btn">
+          SHOP NOW
+        </button>
+        <img src="/images/stul5.png" alt="" class="carousel__img">
+      </a>
+    </section>
+    <button type="button" class="arrows right-arrow" aria-label="Arrow Right">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+        <path
+          d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z" />
+      </svg>
+    </button>
+  </section>
+
+  <section id="section__card" class="card">
+    <div class="container">
+      <div class="cards">
+        <h2 class="cards__title">The Best New Arrivals
+        </h2>
+        <div id="myBtnContainer">
+
+          <button class="btn active" onclick="filterSelection('all')"> Desk</button>
+          <button class="btn" onclick="filterSelection('Bedroom')"> Bedroom</button>
+          <button class="btn" onclick="filterSelection('Lighting')">Lighting</button>
+          <button class="btn" onclick="filterSelection('Accessories')"> Accessories</button>
+        </div>
+      </div>
+
+
+      <!-- Portfolio Gallery Grid -->
+      <div class="row">
+
+        <div class="column Bedroom">
+          <div class="content">
+            <a href="/" class="card">
+              <div class="card__head">
+                <img src="/images/stul2.png" alt="" class="card__img">
+                <div class="card__footer">
+                  <button class="card__icon">
+                    <img src="/images/reset.svg" alt="" class="card__i">
+                  </button>
+                  <button class="card__icon">
+                    <img src="/images/like.svg" alt="" class="card__i">
+                  </button>
+                  <button class="card__icon">
+                    <img src="/images/kar.svg" alt="" class="card__i">
+                  </button>
+                </div>
+              </div>
+              <h3 class="card__name">Blue chair</h3>
+              <div class="card__price">
+                <span class="card__oldPrice">$20.00</span>
+                <span class="card__newPrice">$15.00</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="column Lighting">
+          <div class="content">
+            <a href="/" class="card">
+              <div class="card__head">
+                <img src="/images/kust1.png" alt="" class="card__img">
+                <div class="card__footer">
+                  <button class="card__icon">
+                    <img src="/images/reset.svg" alt="" class="card__i">
+                  </button>
+                  <button class="card__icon">
+                    <img src="/images/like.svg" alt="" class="card__i">
+                  </button>
+                  <button class="card__icon">
+                    <img src="/images/kar.svg" alt="" class="card__i">
+                  </button>
+                </div>
+              </div>
+              <h3 class="card__name">Blue chair</h3>
+              <div class="card__price">
+                <span class="card__oldPrice">$20.00</span>
+                <span class="card__newPrice">$15.00</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="column Accessories">
+          <div class="content">
+            <a href="/" class="card">
+              <div class="card__head">
+                <img src="/images/stul2.png" alt="" class="card__img">
+                <div class="card__footer">
+                  <button class="card__icon">
+                    <img src="/images/reset.svg" alt="" class="card__i">
+                  </button>
+                  <button class="card__icon">
+                    <img src="/images/like.svg" alt="" class="card__i">
+                  </button>
+                  <button class="card__icon">
+                    <img src="/images/kar.svg" alt="" class="card__i">
+                  </button>
+                </div>
+              </div>
+              <h3 class="card__name">Blue chair</h3>
+              <div class="card__price">
+                <span class="card__oldPrice">$20.00</span>
+                <span class="card__newPrice">$15.00</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="column Bedroom">
+          <div class="content">
+            <a href="/" class="card">
+              <div class="card__head">
+                <img src="/images/stul4.png" alt="" class="card__img">
+                <div class="card__footer">
+                  <button class="card__icon">
+                    <img src="/images/reset.svg" alt="" class="card__i">
+                  </button>
+                  <button class="card__icon">
+                    <img src="/images/like.svg" alt="" class="card__i">
+                  </button>
+                  <button class="card__icon">
+                    <img src="/images/kar.svg" alt="" class="card__i">
+                  </button>
+                </div>
+              </div>
+              <h3 class="card__name">Blue chair</h3>
+              <div class="card__price">
+                <span class="card__oldPrice">$20.00</span>
+                <span class="card__newPrice">$15.00</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="column Lighting">
+          <div class="content">
+            <a href="/" class="card">
+              <div class="card__head">
+                <img src="/images/kust1.png" alt="" class="card__img">
+                <div class="card__footer">
+                  <button class="card__icon">
+                    <img src="/images/reset.svg" alt="" class="card__i">
+                  </button>
+                  <button class="card__icon">
+                    <img src="/images/like.svg" alt="" class="card__i">
+                  </button>
+                  <button class="card__icon">
+                    <img src="/images/kar.svg" alt="" class="card__i">
+                  </button>
+                </div>
+              </div>
+              <h3 class="card__name">Blue chair</h3>
+              <div class="card__price">
+                <span class="card__oldPrice">$20.00</span>
+                <span class="card__newPrice">$15.00</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="column Accessories">
+          <div class="content">
+            <a href="/" class="card">
+              <div class="card__head">
+                <img src="/images/stul2.png" alt="" class="card__img">
+                <div class="card__footer">
+                  <button class="card__icon">
+                    <img src="/images/reset.svg" alt="" class="card__i">
+                  </button>
+                  <button class="card__icon">
+                    <img src="/images/like.svg" alt="" class="card__i">
+                  </button>
+                  <button class="card__icon">
+                    <img src="/images/kar.svg" alt="" class="card__i">
+                  </button>
+                </div>
+              </div>
+              <h3 class="card__name">Blue chair</h3>
+              <div class="card__price">
+                <span class="card__oldPrice">$20.00</span>
+                <span class="card__newPrice">$15.00</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="column Bedroom">
+          <div class="content">
+            <a href="/" class="card">
+              <div class="card__head">
+                <img src="/images/stul4.png" alt="" class="card__img">
+                <div class="card__footer">
+                  <button class="card__icon">
+                    <img src="/images/reset.svg" alt="" class="card__i">
+                  </button>
+                  <button class="card__icon">
+                    <img src="/images/like.svg" alt="" class="card__i">
+                  </button>
+                  <button class="card__icon">
+                    <img src="/images/kar.svg" alt="" class="card__i">
+                  </button>
+                </div>
+              </div>
+              <h3 class="card__name">Blue chair</h3>
+              <div class="card__price">
+                <span class="card__oldPrice">$20.00</span>
+                <span class="card__newPrice">$15.00</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="column Lighting">
+          <div class="content">
+            <a href="/" class="card">
+              <div class="card__head">
+                <img src="/images/kust1.png" alt="" class="card__img">
+                <div class="card__footer">
+                  <button class="card__icon">
+                    <img src="/images/reset.svg" alt="" class="card__i">
+                  </button>
+                  <button class="card__icon">
+                    <img src="/images/like.svg" alt="" class="card__i">
+                  </button>
+                  <button class="card__icon">
+                    <img src="/images/kar.svg" alt="" class="card__i">
+                  </button>
+                </div>
+              </div>
+              <h3 class="card__name">Blue chair</h3>
+              <div class="card__price">
+                <span class="card__oldPrice">$20.00</span>
+                <span class="card__newPrice">$15.00</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- END GRID -->
+      </div>
+    </div>
+  </section>
+
+  <section id="section__clients" class="clients">
+    <div class="clients__wrap">
+      <div class="container">
+        <div class="clients__desc">
+          WHAT PEOPLE SAY
+        </div>
+        <h2 class="clients__title">
+          Words Of Our Clients
+        </h2>
+        <div class="clients__cards">
+          <div class="clients__item">
+            <div class="clients__avatar">
+              <img src="/images/client1.png" alt="" class="clients__img">
+            </div>
+            <h3 class="clients__name">
+              Bessie Cooper
+            </h3>
+            <span class="clients__proff">
+              Communications Director
+            </span>
+            <div class="clients__reating">
+              <img src="/images/retingStar.png" alt="" class="clients__retingStars">
+              <span class="clients__retingNamber">4.0</span>
+            </div>
+            <p class="clients__messeg">
+              I Have Gotten At Least 50 Times The Value From Surely. After Using Surely My Business After Skyrocketed
+              Heaven To Delhi
+            </p>
+          </div>
+          <div class="clients__item">
+            <div class="clients__avatar">
+              <img src="/images/client1.png" alt="" class="clients__img">
+            </div>
+            <h3 class="clients__name">
+              Bessie Cooper
+            </h3>
+            <span class="clients__proff">
+              Communications Director
+            </span>
+            <div class="clients__reating">
+              <img src="/images/retingStar.png" alt="" class="clients__retingStars">
+              <span class="clients__retingNamber">4.0</span>
+            </div>
+            <p class="clients__messeg">
+              I Have Gotten At Least 50 Times The Value From Surely. After Using Surely My Business After Skyrocketed
+              Heaven To Delhi
+            </p>
+          </div>
+          <div class="clients__item">
+            <div class="clients__avatar">
+              <img src="/images/client1.png" alt="" class="clients__img">
+            </div>
+            <h3 class="clients__name">
+              Bessie Cooper
+            </h3>
+            <span class="clients__proff">
+              Communications Director
+            </span>
+            <div class="clients__reating">
+              <img src="/images/retingStar.png" alt="" class="clients__retingStars">
+              <span class="clients__retingNamber">4.0</span>
+            </div>
+            <p class="clients__messeg">
+              I Have Gotten At Least 50 Times The Value From Surely. After Using Surely My Business After Skyrocketed
+              Heaven To Delhi
+            </p>
+          </div>
+          <div class="clients__item">
+            <div class="clients__avatar">
+              <img src="/images/client1.png" alt="" class="clients__img">
+            </div>
+            <h3 class="clients__name">
+              Bessie Cooper
+            </h3>
+            <span class="clients__proff">
+              Communications Director
+            </span>
+            <div class="clients__reating">
+              <img src="/images/retingStar.png" alt="" class="clients__retingStars">
+              <span class="clients__retingNamber">4.0</span>
+            </div>
+            <p class="clients__messeg">
+              I Have Gotten At Least 50 Times The Value From Surely. After Using Surely My Business After Skyrocketed
+              Heaven To Delhi
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="section__topProduct" class="topProduct">
+    <div class="container">
+      <div class="topProduct">
+        <div class="topProduct__header">
+          <h2 class="topProduct__title">Top Special Product</h2>
+          <button class="topProduct__btn">See More Product</button>
+        </div>
+        <div class="topProduct__list">
+
+          <div class="topProduct__item">
+            <div class="topProduct__img">
+              <img src="/images/kust2.png" alt="" class="topProduct__i">
+              <div class="topProduct__i_footer">
+                <button class="topProduct__i_item">
+                  <img src="/images/reset.svg" alt="" class="topProduct__i_elem">
+                </button>
+                <button class="topProduct__i_item">
+                  <img src="/images/like.svg" alt="" class="topProduct__i_elem">
+                </button>
+                <button class="topProduct__i_item">
+                  <img src="/images/kar.svg" alt="" class="topProduct__i_elem">
+                </button>
+              </div>
+            </div>
+            <div class="topProduct__footer">
+              <h3 class="topProduct__name">Blue chair</h3>
+              <div class="topProduct__price">
+                <span class="topProduct__oldPrice">$20.00</span>
+                <span class="topProduct__newPrice">$15.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="topProduct__item">
+            <div class="topProduct__img">
+              <img src="/images/kust2.png" alt="" class="topProduct__i">
+              <div class="topProduct__i_footer">
+                <button class="topProduct__i_item">
+                  <img src="/images/reset.svg" alt="" class="topProduct__i_elem">
+                </button>
+                <button class="topProduct__i_item">
+                  <img src="/images/like.svg" alt="" class="topProduct__i_elem">
+                </button>
+                <button class="topProduct__i_item">
+                  <img src="/images/kar.svg" alt="" class="topProduct__i_elem">
+                </button>
+              </div>
+            </div>
+            <div class="topProduct__footer">
+              <h3 class="topProduct__name">Blue chair</h3>
+              <div class="topProduct__price">
+                <span class="topProduct__oldPrice">$20.00</span>
+                <span class="topProduct__newPrice">$15.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="topProduct__item">
+            <div class="topProduct__img">
+              <img src="/images/kust2.png" alt="" class="topProduct__i">
+              <div class="topProduct__i_footer">
+                <button class="topProduct__i_item">
+                  <img src="/images/reset.svg" alt="" class="topProduct__i_elem">
+                </button>
+                <button class="topProduct__i_item">
+                  <img src="/images/like.svg" alt="" class="topProduct__i_elem">
+                </button>
+                <button class="topProduct__i_item">
+                  <img src="/images/kar.svg" alt="" class="topProduct__i_elem">
+                </button>
+              </div>
+            </div>
+            <div class="topProduct__footer">
+              <h3 class="topProduct__name">Blue chair</h3>
+              <div class="topProduct__price">
+                <span class="topProduct__oldPrice">$20.00</span>
+                <span class="topProduct__newPrice">$15.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="topProduct__item">
+            <div class="topProduct__img">
+              <img src="/images/kust2.png" alt="" class="topProduct__i">
+              <div class="topProduct__i_footer">
+                <button class="topProduct__i_item">
+                  <img src="/images/reset.svg" alt="" class="topProduct__i_elem">
+                </button>
+                <button class="topProduct__i_item">
+                  <img src="/images/like.svg" alt="" class="topProduct__i_elem">
+                </button>
+                <button class="topProduct__i_item">
+                  <img src="/images/kar.svg" alt="" class="topProduct__i_elem">
+                </button>
+              </div>
+            </div>
+            <div class="topProduct__footer">
+              <h3 class="topProduct__name">Blue chair</h3>
+              <div class="topProduct__price">
+                <span class="topProduct__oldPrice">$20.00</span>
+                <span class="topProduct__newPrice">$15.00</span>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section__priemus" class="priemushestva">
+    <div class="container">
+      <div class="priem">
+        <div class="priem__list">
+          <div class="priem__item">
+            <img src="/images/auto.svg" class="priem__i"></img>
+            <div class="priem__text">
+              <span class="priem__text_title">Free Shipping</span>
+              <span class="priem__text_desc">Capped at $319 per order</span>
+            </div>
+          </div>
+          <div class="priem__item">
+            <img src="/images/kub.svg" class="priem__i"></img>
+            <div class="priem__text">
+              <span class="priem__text_title">Free Returns</span>
+              <span class="priem__text_desc">Within 25 Days</span>
+            </div>
+          </div>
+          <div class="priem__item">
+            <img src="/images/site.svg" class="priem__i"></img>
+            <div class="priem__text">
+              <span class="priem__text_title">100% Secure
+              </span>
+              <span class="priem__text_desc">100% Secure payment</span>
+            </div>
+          </div>
+          <div class="priem__item">
+            <img src="/images/prem.svg" class="priem__i"></img>
+            <div class="priem__text">
+              <span class="priem__text_title">Best Price</span>
+              <span class="priem__text_desc">Guaranteed Gifts</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section__articles" class="articles carousel-wrapper">
+    <div class="container">
+      <h4 class="articles__desc">RECENT ARTICLES</h4>
+      <h2 class="articles__title">Read Our Latest Articles</h2>
+      <div class="articles__slider carousel-wrapper">
+
+        <button type="button" class="arrows left-arrow arrow-inactive" aria-label="Arrow Left">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+            <path
+              d="M192 448c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l137.4 137.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448z" />
+          </svg>
+        </button>
+        <section class="carousel articles__carusel ">
+          <div class="carousel__item carousel__item-articles">
+            <img src="/images/homeBg.png" alt="comfort" class="item-articles__img">
+            <div class="item-articles__footer">
+              <div class="item-articles__dataNambers">
+                <span class="item-articles__data">05</span>
+                <span class="item-articles__danaName">jay</span>
+              </div>
+              <div class="item-articles__footer-header">
+                <div class="item-articles__footer-pipl">
+                  <img src="./images/avaPipl.svg" alt="" class="item-articles__footer-ava">
+                  <span class="item-articles__footer-name">jonson</span>
+                </div>
+                <div class="item-articles__footer-comments">
+                  <img src="./images/commit.svg" alt="" class="item-articles__footer-i">
+                  <span class="item-articles__footer-comit">9 commit</span>
+                </div>
+              </div>
+
+              <div class="item__footer-title">
+                <h3 class="item__footer-text">Things to Know When Choosing the Perfect Sofa</h3>
+                <button class="item__footer-btn">See More Product</button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel__item carousel__item-articles">
+            <img src="/images/homeBg.png" alt="comfort" class="item-articles__img">
+            <div class="item-articles__footer">
+              <div class="item-articles__dataNambers">
+                <span class="item-articles__data">05</span>
+                <span class="item-articles__danaName">jay</span>
+              </div>
+              <div class="item-articles__footer-header">
+                <div class="item-articles__footer-pipl">
+                  <img src="./images/avaPipl.svg" alt="" class="item-articles__footer-ava">
+                  <span class="item-articles__footer-name">jonson</span>
+                </div>
+                <div class="item-articles__footer-comments">
+                  <img src="./images/commit.svg" alt="" class="item-articles__footer-i">
+                  <span class="item-articles__footer-comit">9 commit</span>
+                </div>
+              </div>
+
+              <div class="item__footer-title">
+                <h3 class="item__footer-text">Things to Know When Choosing the Perfect Sofa</h3>
+                <button class="item__footer-btn">See More Product</button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel__item carousel__item-articles">
+            <img src="/images/homeBg.png" alt="comfort" class="item-articles__img">
+            <div class="item-articles__footer">
+              <div class="item-articles__dataNambers">
+                <span class="item-articles__data">05</span>
+                <span class="item-articles__danaName">jay</span>
+              </div>
+              <div class="item-articles__footer-header">
+                <div class="item-articles__footer-pipl">
+                  <img src="./images/avaPipl.svg" alt="" class="item-articles__footer-ava">
+                  <span class="item-articles__footer-name">jonson</span>
+                </div>
+                <div class="item-articles__footer-comments">
+                  <img src="./images/commit.svg" alt="" class="item-articles__footer-i">
+                  <span class="item-articles__footer-comit">9 commit</span>
+                </div>
+              </div>
+
+              <div class="item__footer-title">
+                <h3 class="item__footer-text">Things to Know When Choosing the Perfect Sofa</h3>
+                <button class="item__footer-btn">See More Product</button>
+              </div>
+            </div>
+          </div>
+
+        </section>
+        <button type="button" class="arrows right-arrow" aria-label="Arrow Right">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+            <path
+              d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z" />
+          </svg>
+        </button>
+
+      </div>
+    </div>
+  </section>
+  <footer id="section__footer" class="footer">
+    <div class="container">
+      <div class="footer__blok">
+        <img src="/images/logo.png" alt="" class="footer__logo">
+        <h2 class="footer__title">Join Now For Early Access</h2>
+        <p class="footer__text">Suspendisse eu velit est. Cras nec vestibulum quam. Donec tincidunt purus nec enim
+          tincidunt, sit</p>
+          <div class="footer__inputBtns">
+            <input type="text" class="footer__input" placeholder="Enter your email address...">
+            <button class="footer__btn">SUBSCRIBE</button>
+          </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
