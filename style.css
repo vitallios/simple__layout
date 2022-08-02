@@ -859,7 +859,7 @@ input:checked + label #off {
 }
 
 .footer {
-  background-image: url("/images/footerbg.png");
+  background-image: url("./images/footerbg.png");
   height: 430px;
   background-repeat: round;
   background-size: cover;
